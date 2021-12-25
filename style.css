@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #080710;
+}
+.background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.background .shape {
+  height: 140px;
+  width: 140px;
+  position: absolute;
+  border-radius: 50%;
+}
+.shape:first-child {
+  background: linear-gradient(#1845ad, #23a2f6);
+  left: -80px;
+  top: 70px;
+}
+.shape:last-child {
+  background: linear-gradient(to right, #ff512f, #f09819);
+  right: -80px;
+  bottom: 80px;
+}
+.alarm-clock {
+  position: relative;
+  padding: 7px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 10px;
+}
+.time {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px 19px;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  font-size: 60px;
+  font-family: "orbitron", sans serif;
+}
+.time span {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #09ecf8;
+  text-shadow: 0 0 15px #375f08;
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+.time span.colon {
+  width: 14px;
+  padding: 15px;
+  text-align: center;
+  animation: blink 2s infinite;
+}
+
+.date {
+  width: 60%;
+  background-color: rgba(250, 250, 250, 0.335);
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  padding: 1.1em;
+  color: white;
+  text-align: center;
+}
